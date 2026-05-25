@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grand-parentalité · Corinne Perrot</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --cream:#F5F0E8; --cream2:#ECE5DA; --terracotta:#C4613A; --forest:#2D3D2E; --sage:#7A9170; --black:#1A1A18; --gray:#686862;
+      --display:'Cormorant Garamond', Georgia, serif; --body:'DM Sans', sans-serif;
+    }
+    *{box-sizing:border-box;margin:0;padding:0} html{scroll-behavior:smooth} body{font-family:var(--body);background:var(--cream);color:var(--black);font-weight:300;line-height:1.7} a{color:inherit}
+    nav{position:fixed;top:0;left:0;right:0;z-index:10;display:flex;justify-content:space-between;align-items:center;padding:1.2rem 4rem;background:rgba(245,240,232,.95);backdrop-filter:blur(10px);border-bottom:1px solid rgba(196,97,58,.16)}
+    .logo{font-family:var(--display);font-size:1.45rem;text-decoration:none}.logo span{color:var(--terracotta)} .nav-links{display:flex;gap:2rem;list-style:none}.nav-links a{text-decoration:none;text-transform:uppercase;letter-spacing:.12em;font-size:.74rem;opacity:.7}.nav-links a:hover{opacity:1}.cta{background:var(--terracotta);color:white;text-decoration:none;padding:.75rem 1.3rem;text-transform:uppercase;letter-spacing:.1em;font-size:.75rem;font-weight:500}
+    .hero{min-height:100vh;display:grid;grid-template-columns:1.05fr .95fr;padding-top:74px}.hero-text{display:flex;flex-direction:column;justify-content:center;padding:5rem 5rem}.eyebrow{color:var(--terracotta);text-transform:uppercase;letter-spacing:.18em;font-size:.72rem;margin-bottom:1.8rem}.h1{font-family:var(--display);font-size:clamp(3.1rem,5.4vw,6rem);font-weight:300;line-height:1.04;margin-bottom:1.6rem}.h1 em{color:var(--terracotta);font-style:italic}.subtitle{max-width:560px;color:var(--gray);font-size:1.05rem;margin-bottom:2rem}.actions{display:flex;gap:1rem;flex-wrap:wrap}.btn{display:inline-block;text-decoration:none;text-transform:uppercase;letter-spacing:.1em;font-size:.78rem;font-weight:500;padding:1rem 1.6rem}.btn.primary{background:var(--terracotta);color:#fff}.btn.secondary{border:1px solid rgba(26,26,24,.25)}.stats{display:flex;gap:2.4rem;margin-top:3rem;padding-top:1.8rem;border-top:1px solid rgba(26,26,24,.11)}.num{display:block;font-family:var(--display);font-size:2.3rem;color:var(--terracotta);line-height:1}.lab{font-size:.75rem;color:var(--gray)}.hero-img{position:relative;overflow:hidden;background:#ddd}.hero-img img{width:100%;height:100%;object-fit:cover;object-position:center center;display:block}.quote{position:absolute;left:0;right:0;bottom:0;padding:2rem;background:linear-gradient(transparent,rgba(26,26,24,.78));color:white;font-family:var(--display);font-size:1.25rem;font-style:italic}
+    section{padding:7rem 5rem}.dark{background:var(--forest);color:var(--cream)}.wrap{max-width:1120px;margin:0 auto}.label{text-transform:uppercase;letter-spacing:.2em;font-size:.7rem;color:var(--terracotta);margin-bottom:1.8rem}.dark .label{color:var(--sage)}.title{font-family:var(--display);font-size:clamp(2.2rem,4vw,4.1rem);font-weight:300;line-height:1.12;margin-bottom:1.4rem}.title em{font-style:italic;color:var(--terracotta)}.dark .title em{color:#E0A080}.text{max-width:740px;color:var(--gray);font-size:1rem}.dark .text{color:rgba(245,240,232,.75)}
+    .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(26,26,24,.12);margin-top:3rem}.card{background:var(--cream2);padding:2.2rem}.card:hover{background:#fffaf2}.card-n{font-family:var(--display);font-size:2.6rem;color:rgba(196,97,58,.25)}.card h3{font-family:var(--display);font-size:1.28rem;margin:.8rem 0}.card p{font-size:.9rem;color:var(--gray)}
+    .offers{display:grid;grid-template-columns:repeat(2,1fr);gap:2rem;margin-top:3rem}.offer{border:1px solid rgba(26,26,24,.15);padding:2.4rem;background:rgba(255,255,255,.22)}.offer.featured{background:var(--forest);color:var(--cream);border-color:var(--forest)}.tag{text-transform:uppercase;letter-spacing:.16em;font-size:.7rem;color:var(--terracotta);font-weight:500}.offer.featured .tag{color:var(--sage)}.offer h3{font-family:var(--display);font-size:1.8rem;margin:1rem 0}.offer p,.offer li{color:var(--gray);font-size:.92rem}.offer.featured p,.offer.featured li{color:rgba(245,240,232,.72)}.offer ul{margin:1rem 0 0 1.1rem}.price{font-family:var(--display);font-size:1.6rem;color:var(--terracotta);margin-top:1rem}.offer.featured .price{color:#E0A080}
+    .refs{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:2.5rem}.ref{background:var(--cream);padding:1.4rem;border:1px solid rgba(26,26,24,.08);font-size:.88rem;color:var(--gray)}
+    .contact{background:var(--black);color:var(--cream)}.contact .text{color:rgba(245,240,232,.65)}.contact-box{margin-top:2.5rem;display:flex;gap:1rem;flex-wrap:wrap;align-items:center}.email{color:rgba(245,240,232,.75);font-size:.95rem}.footer{background:var(--black);border-top:1px solid rgba(245,240,232,.08);color:rgba(245,240,232,.35);padding:1.8rem 5rem;font-size:.75rem;display:flex;justify-content:space-between;gap:1rem}
+    @media(max-width:900px){nav{padding:1rem 1.4rem}.nav-links{display:none}.hero{grid-template-columns:1fr}.hero-text{order:2;padding:3rem 1.5rem}.hero-img{height:72vh;order:1}.stats{gap:1.4rem;flex-wrap:wrap}section{padding:4.5rem 1.5rem}.grid-4,.offers,.refs{grid-template-columns:1fr}.footer{padding:1.5rem;flex-direction:column}.h1{font-size:3.4rem}}
+  </style>
+</head>
+<body>
+  <nav>
+    <a class="logo" href="#">Grand-parentalité <span>& transmission</span></a>
+    <ul class="nav-links">
+      <li><a href="#pourquoi">Pourquoi</a></li>
+      <li><a href="#ateliers">Ateliers</a></li>
+      <li><a href="#references">Références</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="cta" href="mailto:perrotcorinne.eje@gmail.com?subject=Demande%20d'information%20-%20Ateliers%20grands-parents">Me contacter</a>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-text">
+      <p class="eyebrow">Corinne Perrot · Éducatrice de jeunes enfants</p>
+      <h1 class="h1">Les grands-parents<br>ne gardent pas seulement.<br><em>Ils transmettent.</em></h1>
+      <p class="subtitle">Des ateliers pour aider les grands-parents à trouver leur juste place auprès du jeune enfant : langage, émotions, transmission, résilience et liens intergénérationnels.</p>
+      <div class="actions">
+        <a class="btn primary" href="#ateliers">Découvrir les ateliers</a>
+        <a class="btn secondary" href="mailto:perrotcorinne.eje@gmail.com?subject=Contact%20depuis%20le%20site">Écrire un message</a>
+      </div>
+      <div class="stats">
+        <div><span class="num">20+</span><span class="lab">ans d’expérience</span></div>
+        <div><span class="num">DE</span><span class="lab">EJE niveau 6</span></div>
+        <div><span class="num">03</span><span class="lab">Allier · visio possible</span></div>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="images/corinne-perrot.jpg" alt="Corinne Perrot, éducatrice de jeunes enfants">
+      <div class="quote">« Soutenir les liens sans prendre la place. »</div>
+    </div>
+  </header>
+
+  <section class="dark" id="pourquoi">
+    <div class="wrap">
+      <p class="label">Pourquoi ces ateliers</p>
+      <h2 class="title">Les grands-parents occupent une place affective unique dans la vie de l’enfant.</h2>
+      <p class="text">Ils transmettent des mots, des gestes, des histoires, des silences parfois. Leur présence peut soutenir la sécurité affective, le langage et la construction émotionnelle du jeune enfant. Pourtant, il existe peu d’espaces pensés pour eux. Ces ateliers proposent un cadre simple, sérieux et accessible pour réfléchir à cette place, sans culpabiliser et sans imposer un modèle familial.</p>
+    </div>
+  </section>
+
+  <section id="ateliers">
+    <div class="wrap">
+      <p class="label">Les offres</p>
+      <h2 class="title">Ateliers et rencontres pour <em>grands-parents</em></h2>
+      <p class="text">Formats possibles : atelier individuel ou collectif, rencontre en médiathèque, centre social, association, collectivité ou structure petite enfance.</p>
+      <div class="offers">
+        <div class="offer featured">
+          <span class="tag">Atelier signature</span>
+          <h3>Parler de la mort à un enfant</h3>
+          <p>Trouver des mots simples quand l’enfant pose des questions sur la mort, la maladie ou l’absence. Un atelier pour ne pas laisser l’enfant seul avec ce qu’il imagine.</p>
+          <ul><li>Durée : 1h30 à 2h</li><li>Présentiel ou visio</li><li>Pour grands-parents et structures</li></ul>
+          <div class="price">À partir de 50 €</div>
+        </div>
+        <div class="offer">
+          <span class="tag">Atelier</span>
+          <h3>La juste place du grand-parent</h3>
+          <p>Être présent sans remplacer les parents. Soutenir sans imposer. Trouver une posture claire dans les familles d’aujourd’hui.</p>
+          <ul><li>Durée : 1h30</li><li>Atelier individuel ou petit groupe</li><li>Adaptable aux médiathèques et centres sociaux</li></ul>
+          <div class="price">À partir de 50 €</div>
+        </div>
+        <div class="offer">
+          <span class="tag">Atelier</span>
+          <h3>Les émotions de mon petit-enfant</h3>
+          <p>Comprendre les colères, les peurs, les pleurs ou le retrait. Mettre des mots sans dramatiser et sans minimiser.</p>
+          <ul><li>Durée : 1h30</li><li>Approche éducative, non thérapeutique</li><li>Supports simples remis aux participants</li></ul>
+          <div class="price">À partir de 50 €</div>
+        </div>
+        <div class="offer">
+          <span class="tag">Cycle</span>
+          <h3>Parcours Grand-Parent</h3>
+          <p>Un cycle progressif pour comprendre le rôle du grand-parent dans le développement du jeune enfant : lien, langage, émotions, transmission.</p>
+          <ul><li>4 modules · 12h</li><li>Présentiel ou visio</li><li>Tarif structure sur devis</li></ul>
+          <div class="price">À partir de 240 €</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark">
+    <div class="wrap">
+      <p class="label">Formats pour structures</p>
+      <h2 class="title">Médiathèques, centres sociaux, collectivités, associations familiales.</h2>
+      <p class="text">Je propose des ateliers, conférences et cycles autour de la grand-parentalité. Les contenus peuvent être adaptés à votre public, à votre territoire et à vos objectifs : prévention, soutien aux liens familiaux, transmission, langage, émotions ou accompagnement des sujets sensibles.</p>
+    </div>
+  </section>
+
+  <section id="references">
+    <div class="wrap">
+      <p class="label">Références</p>
+      <h2 class="title">Une approche éducative, <em>pas thérapeutique</em></h2>
+      <p class="text">L’accompagnement proposé s’appuie sur l’expérience de terrain, le développement du jeune enfant, l’attachement, le langage et la résilience.</p>
+      <div class="refs">
+        <div class="ref">Éducatrice de Jeunes Enfants — DE EJE niveau 6</div>
+        <div class="ref">20 ans d’expérience dans l’accompagnement du jeune enfant et des familles</div>
+        <div class="ref">Formation “Résilience chez les enfants exposés aux traumatismes” — Université du Minnesota</div>
+        <div class="ref">Formation-action ANSA / CAF autour du développement du langage du jeune enfant</div>
+        <div class="ref">Approche fondée sur l’attachement, la sécurité affective et les neurosciences affectives</div>
+        <div class="ref">Ateliers accessibles en présentiel dans l’Allier ou en visio</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <p class="label">Contact</p>
+      <h2 class="title">Une question ?<br><em>Parlons-en.</em></h2>
+      <p class="text">Pour un atelier grands-parents, une conférence, le Parcours Grand-Parent ou une intervention en médiathèque, centre social, collectivité ou structure petite enfance.</p>
+      <div class="contact-box">
+        <a class="btn primary" href="mailto:perrotcorinne.eje@gmail.com?subject=Demande%20d'information%20-%20Grand-parentalit%C3%A9">Me contacter par mail</a>
+        <span class="email">perrotcorinne.eje@gmail.com</span>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <span>© 2026 Corinne Perrot · Grand-parentalité & transmission</span>
+    <span>Ateliers · Conférences · Allier · Visio</span>
+  </footer>
+</body>
+</html>
