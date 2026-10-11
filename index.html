@@ -18,6 +18,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+ 
+
+
   <style>
     :root{--paper:#f7f3eb;--white:#fffdf8;--ink:#293b30;--muted:#62655d;--clay:#a74d31;--sand:#ebe4d7;--line:#d7d7c9;--sage:#e4e9dd;--serif:'Cormorant Garamond',Georgia,serif;--sans:'DM Sans',Arial,sans-serif}
     *,*::before,*::after{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:110px}body{margin:0;background:var(--paper);color:var(--ink);font:400 16px/1.7 var(--sans)}a{color:inherit;text-underline-offset:5px}a:hover{text-decoration-thickness:2px}img{display:block;max-width:100%}p,h1,h2,h3,figure,blockquote{margin:0}h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.08;text-wrap:balance}h2{font-size:clamp(36px,4.3vw,58px)}h3{font-size:32px}em{font-weight:400;color:var(--clay)}button,summary{font:inherit}:focus-visible{outline:3px solid var(--clay);outline-offset:6px}
@@ -52,6 +55,35 @@
     width: 100%;
     height: auto;
     display: block;
+  }
+}
+/* Mamie EJE — amélioration de la lisibilité */
+.hero-intro,
+.workshop p,
+.workshop-note,
+.approach-copy p,
+.journal-card p,
+.structures p {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.workshop-meta,
+.workshop-bottom,
+.trust,
+.journal-card .text-link {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+@media (max-width: 700px) {
+  .hero-intro,
+  .workshop p,
+  .approach-copy p,
+  .journal-card p,
+  .structures p {
+    font-size: 16px;
+    line-height: 1.7;
   }
 }
   </style>
